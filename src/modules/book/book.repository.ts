@@ -7,7 +7,6 @@ export class BookRepository {
   constructor(private connection: DatabaseConnection) {}
 
   public async create(data: BookEntity): Promise<BookEntity> {
-    const book = await this.connection.book.create({ data });
-    return book;
+    return await this.connection.book.create({ data });
   }
 }
