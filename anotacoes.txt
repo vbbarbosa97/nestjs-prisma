@@ -1,0 +1,9 @@
+Passos: 
+- yarn add prisma -D
+- npx prisma init (Para inicialização das configurações)
+- yarn add @prisma/client
+- Adicionei um objeto Prisma dentro do packge.json pra referenciar o schema para dentro da pasta que eu quero 
+
+Comandos:
+- yarn prisma migrate dev --name NomeMigrate
+- nest g resource caminho/nomeDaPasta (Cria controller, service ...)
